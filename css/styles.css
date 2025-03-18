@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 20px;
+    font-size: 1.5em;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.food {
+    position: relative;
+    border: 1px solid black;
+    background-color: #ddd;
+    padding: 20px;
+    margin: 10px;
+    text-align: left;
+}
+
+.food .title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #ff5733;
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+@media (min-width: 992px) {
+    .food {
+        width: 30%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .food {
+        width: 45%;
+    }
+    #sushi {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .food {
+        width: 100%;
+    }
+}
